@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="Topcoder" default="runtests">
+  <property name="sourcedir" value="." />
+  <property name="builddir" value="" />
+  <target name="runtests" depends="compile">
+    <junit haltonfailure="false">
+      <formatter type="plain" />
+      <classpath>
+        <pathelement location="${builddir}" />
+      </classpath>
+      <test name="testSuites.AllTest" />
+    </junit>
+  </target>
+</project>

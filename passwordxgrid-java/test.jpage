@@ -1,0 +1,5 @@
+long r = 1;
+for(long i = 41; i <= 80; ++i){
+	r *= i;
+}
+System.out.println(r);
